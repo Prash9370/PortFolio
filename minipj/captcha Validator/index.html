@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Captcha Validator</title>
+</head>
+
+<body>
+    <section>
+        <div class="body">
+            <p class="digi">0</p>
+            <p class="digi">0</p>
+            <p class="digi">0</p>
+            <p class="digi">0</p>
+            <p class="digi">0</p>
+            <p class="digi">0</p>
+        </div>
+        <div>
+            <input type="text" id="Captcha" placeholder="Enter Captcha Code">
+            <span class="btn" id="vrfbtn" onclick="load(verify)">Verify</span>
+            <img src="./loading.svg" alt="loading..." id="loadsvg">
+        </div>
+        <section id="success">
+            <img src="" alt="" id="gif">
+            <div id="msg"></div>
+            <div id="reset" onclick="location.reload();">Reset</div>
+        </section>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", oncreate());
+        function oncreate() {
+            for (let i = 0; i < 6; i++) {
+                let rndm = giverndm(1, 9);
+                console.log(rndm);
+                let para = document.getElementsByClassName("digi")[i]
+                para.textContent = rndm;
+                para.style.transform = "translateY(" + rndm * 5 + "px)"
+                rndm = giverndm(5, 15);
+                para.style.fontSize = rndm * 2 + "px"
+
+
+            }
+        }
+
+
+    </script>
+
+</body>
+
+</html>

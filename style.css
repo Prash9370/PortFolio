@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Roboto+Slab:wght@500&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.head {
+    background-color: #333;
+    color: rgb(0, 247, 255);
+    font-size: 35px;
+    padding: 3px;
+    padding-left: 50px;
+    margin-top: 0px;
+    line-height: 50px;
+    font-family: 'Baloo Bhaijaan 2', sans-serif;
+    font-weight: 1000;
+    text-align: left;
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.navlist {
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    padding: 10px 20px;
+    width: auto;
+    justify-content: center;
+}
+
+.navbar2 {
+    padding: 0;
+    width: 100%;
+}
+
+.navlist2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+}
+
+.navlist>span {
+    float: center;
+}
+
+.nav-item a {
+    padding: 0 10px 0 10px;
+    font-family: 'Baloo Bhaijaan 2', sans-serif;
+    text-decoration: none;
+    color: white;
+    height: fit-content;
+}
+
+.nav-item a:hover {
+    /* background-color: #555; */
+    color: cyan;
+    text-shadow: white 1px 1px 2px;
+}
+
+#intro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: #404040;
+    padding: 15px 0 15px 0;
+}
+
+#intro section {
+    text-align: left;
+    font-family: 'Roboto Slab', serif;
+    margin: 0 auto 0 auto;
+
+}
+
+#intro section p {
+    font-size: 24px;
+    color: #fff;
+    text-shadow: #000000 2px 4px 3px;
+    margin: 0;
+}
+
+#intro section h1 {
+    font-size: 36px;
+    color: #ffffff;
+    text-shadow: rgb(255 0 73) 3px 3px 1px;
+    margin: 0;
+}
+
+#intro section h3 {
+    font-size: 20px;
+    color: #9f9f9f;
+    margin: 0;
+}
+
+#intro figure {
+    margin: 25px auto 25px auto;
+}
+
+#intro figure img {
+
+    width: 200px;
+    height: auto;
+    border: cyan solid 1.5px;
+    border-radius: 30%;
+    box-shadow: 0px 0px 20px 10px cyan;
+
+}
+.red{
+    color:rgb(239, 133, 72);
+}
+.blue {
+    color: rgb(0, 247, 255);
+}
+
+.contacts {
+    padding: 5px;
+    line-height: 55px;
+}
+
+.contacts img {
+    height: 25px;
+}
+
+.contacts img:hover {
+    height: 30px;
+    cursor: pointer;
+}
+
+.cv {
+    display:inline-block;
+    border-radius: 50px;
+    background-color: aqua;
+    padding: 5px 15px 5px 15px;
+    box-shadow:0 4px white;
+}
+
+.cv:hover {
+    cursor: pointer;
+    color: white;
+    box-shadow:0 2px white;
+    transform: translateY(2px);
+
+}
+.cv:active{
+    box-shadow:0 0px white;
+    transform: translateY(4px);
+}
+
+#about {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: #292929;
+    padding: 25px 25px 25px 0;
+}
+
+#about figure img {
+
+    width: 200px;
+    height: auto;
+    border: cyan solid 1.5px;
+    border-radius: 30%;
+    box-shadow: 0px 0px 20px 10px cyan;
+
+}
+
+#about figure {
+    margin: 50px auto 50px auto;
+}
+
+#about section {
+    text-align: justify;
+    font-family: 'Roboto Slab', serif;
+    margin: 0 auto 0 50px;
+    width: 500px;
+    color: white;
+}
+
+#Projects, #MiniProjects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: #404040;
+    padding: 0 0 25px 0;
+    margin: 0px;
+}
+
+.card {
+    width: 300px;
+    margin: 30px auto;
+    margin-top: 0;
+    background-color: #333;
+    /* Dark background color */
+    border: 8px solid cyan;
+    /* Cyan border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    color: #fff;
+    height: 380px;
+}
+.card:hover{
+    box-shadow: 0  0 10px white;
+    border-color: white;
+
+}
+#Projects>.card:hover, #MiniProjects>.card:hover {
+    cursor: pointer;
+}
+
+.card .imgcontainer {
+    margin: 0;
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(235, 234, 235);
+}
+
+.card .imgcontainer img {
+    width: 280px;
+    height: 190px;
+
+}
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+
+}
+
+#Services .card .card-content {
+    margin-top: 50px;
+}
+
+.card-content img {
+    width: 100px;
+}
+
+.card-content .btn {
+    display: inline-block;
+    background-color: cyan;
+    color: #1d1c1c;
+    text-shadow: #fff 1px 1px;
+    font-family: 'Baloo Bhaijaan 2', sans-serif;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 2px 12px 2px 12px;
+    box-shadow:0 4px white;
+
+}
+
+.card-content .btn:hover {
+    cursor: pointer;
+    color: #fff;
+    box-shadow:0 2px white;
+    transform: translateY(2px);
+}
+.card-content .btn:active{
+    box-shadow:0 0px white;
+    transform: translateY(4px);
+}
+
+.card-title {
+    font-size: 24px;
+    margin: 0;
+    color: #fff;
+    font-family: 'Baloo Bhaijaan 2', sans-serif;
+    font-weight: 1000;
+    text-align: center;
+    padding: 0;
+    line-height: 25px;
+}
+
+.card-description {
+    margin: 0;
+    font-size: 16px;
+    padding: 5px;
+    color: #fff;
+    font-family: 'Baloo Bhaijaan 2', sans-serif;
+}
+
+.title {
+    background-color: #404040;
+    font-family: 'Baloo Bhaijaan 2', sans-serif;
+    font-weight: 500;
+    padding: 10px;
+    text-align: center;
+}
+
+.headings {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 35PX;
+}
+
+.centerfloat {
+    float: center;
+}
+
+#Services {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: #292929;
+    padding: 0 0 25px 0;
+    margin: 0px;
+}
+
+.title2 {
+    background-color: #292929;
+    font-family: 'Baloo Bhaijaan 2', sans-serif;
+    font-weight: 500;
+    padding: 10px;
+    text-align: center;
+}
+
+.title2 span h1 {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+#resume {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: #404040;
+    padding: 0 0 25px 0;
+    margin: 0px;
+    font-family: 'Baloo Bhaijaan 2', sans-serif;
+}
+
+.edhead {
+    padding: 4px;
+    padding-top: 13px;
+    margin: 0px;
+}
+
+.eddesc {
+    margin-top:2px;
+    line-height: 0px;
+    padding: 0;
+}
+
+.cert {
+    color: white;
+    font-size: 14px;
+}
+
+.cbtn {
+    margin-top: 10px;
+}
+
+#contacts {
+    align-items: center;
+    text-align: center;
+    height: auto;
+    background-color: #292929;
+    padding: 25px 0 25px 0;
+    font-family: 'Baloo Bhaijaan 2', sans-serif;
+}
+
+.contactdata {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.inp {
+    width: 450px;
+    margin: 10px;
+    padding: 10px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #4d4f51;
+    color: white;
+}
+.inp:focus{
+    border:2px cyan solid;
+}
+.inp::placeholder, textarea::placeholder {
+    color:white;
+}
+
+textarea {
+    padding: 5px;
+    width: 80vw;
+    overflow-wrap: normal;
+    border-radius: 10px;
+    background-color: #4d4f51;
+    color: white;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#contacts form .btn {
+    display: inline-block;
+    background-color: cyan;
+    color: #1d1c1c;
+    text-shadow: #fff 1px 1px;
+    font-family: 'Baloo Bhaijaan 2', sans-serif;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 2px 12px 2px 12px;
+    box-shadow:0 4px white;
+
+}
+
+#contacts form .btn:hover {
+    cursor: pointer;
+    color: #fff;
+    box-shadow:0 2px white;
+    transform: translateY(2px);
+}
+#contacts form .btn:active{
+    box-shadow:0 0px white;
+    transform: translateY(4px);
+}
+
+footer {
+    font-family: 'Baloo Bhaijaan 2', sans-serif;
+    background-color: #000000;
+    color: #fff;
+    padding: 20px 0;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .footer-content{
+    width:50%;
+}
+.container .footer-links {
+    width:100%;
+    margin: 0;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content .links-heading{
+    width:100%;
+    text-align:center;
+}
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+}
+.footer-links a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+.footer-info p {
+    margin: 5px 0;
+}
+.footer-info p a{
+    color:grey;
+}
+.contact-links {
+    padding: 5px;
+    line-height: 55px;
+    text-align:center;
+}
+
+.contact-links img {
+    height: 25px;
+    margin-right:50px;
+    margin-left:50px;
+}
+
+.contact-links img:hover {
+    height: 30px;
+    cursor: pointer;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="icon.png">
+	<title>Tic Tac Toe Game</title>
+</head>
+
+<body>
+	<nav>
+		<div>
+			<p>Tic Tac Toe</p>
+		</div>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</nav>
+	<header>
+		<div>This is just a mini-project website
+		</div>
+	</header>
+	<main>
+		<div class="main">
+			<div class="container">
+				<div class="lines">
+					<div class="blocks" onclick="clicks(0)">
+
+					</div>
+					<div class="blocks" onclick="clicks(1)">
+
+					</div>
+					<div class="blocks" onclick="clicks(2)">
+
+					</div>
+				</div>
+				<div class="lines">
+					<div class="blocks" onclick="clicks(3)">
+
+					</div>
+					<div class="blocks" onclick="clicks(4)">
+
+					</div>
+					<div class="blocks" onclick="clicks(5)">
+
+					</div>
+				</div>
+				<div class="lines">
+					<div class="blocks" onclick="clicks(6)">
+
+					</div>
+					<div class="blocks" onclick="clicks(7)">
+
+					</div>
+					<div class="blocks" onclick="clicks(8)">
+
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+		<div class="btncontainer">
+			<div class="btn" onclick="empt()">Reset Game</div>
+			<div>
+	</main>
+	<script>
+		let turn = "X"
+		let ind1 = [0, 3, 6, 0, 1, 2, 0, 2];
+		let ind2 = [1, 4, 7, 3, 4, 5, 4, 4];
+		let ind3 = [2, 5, 8, 6, 7, 8, 8, 6];
+		let fill = false;
+
+		console.log("script working");
+		function check() {
+			let boxes = document.getElementsByClassName("blocks");
+			for (let b = 0; b < 9; b++) {
+				if (boxes[b].innerText == "") {
+					fill = false;
+					break;
+				}
+				fill = true;
+			}
+
+			for (let i = 0; i < 8; i++) {
+				let index1 = ind1[i];
+				let index2 = ind2[i];
+				let index3 = ind3[i];
+				if ((boxes[index1].innerText == boxes[index2].innerText && boxes[index2].innerText == boxes[index3].innerText) && (boxes[index1].innerText != "" && boxes[index2].innerText != "" && boxes[index3].innerText != "")) {
+					alert("Player '" + boxes[index1].innerText + "' Wins");
+					for (let a = 0; a < 9; a++) {
+						boxes[a].innerText = "";
+					}
+				}
+				if (fill) {
+
+					alert("Its a draw");
+					for (let a = 0; a < 9; a++) {
+						boxes[a].innerText = "";
+					} fill = false;
+				}
+
+
+
+			}
+		}
+		function clicks(index) {
+			let box = document.getElementsByClassName("blocks")[index];
+			if (box.innerText == "") {
+				if (turn == "X") { box.innerText = "X"; turn = "O"; }
+				else { box.innerText = "O"; turn = "X"; }
+				setTimeout(check, 10);
+			}
+
+		}
+		function empt() {
+			let boxes = document.getElementsByClassName("blocks");
+			for (let a = 0; a < 9; a++) {
+				boxes[a].innerText = "";
+			}
+			fill = false;
+		}
+
+
+	</script>
+</body>
+
+</html>

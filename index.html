@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Prashant Shinde</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <div class="navlist">
+                    <span>
+                        <span class="nav-item"><a href="#intro">Home</a></span>
+                        <span class="nav-item"><a href="#about">About</a></span>
+                        <span class="nav-item"><a href="#project">Projects</a></span>
+                    </span>
+                    <span>
+                        <span class="nav-item"><a href="#service">Services</a></span>
+                        <span class="nav-item"><a href="#resume">Profile</a></span>
+                        <span class="nav-item"><a href="#contacts">Contact</a></span>
+                    </span>
+                </div>
+            </div>
+            <div class="navbar2">
+                <div class="navlist2">
+                    <span>
+                        <span class="nav-item"><a href="#intro">Home</a></span>
+                        <span class="nav-item"><a href="#about">About</a></span>
+                        <span class="nav-item"><a href="#project">Projects</a></span>
+                    </span>
+                    <span>
+                        <span class="nav-item"><a href="#service">Services</a></span>
+                        <span class="nav-item"><a href="#resume">Profile</a></span>
+                        <span class="nav-item"><a href="#contacts">Contact</a></span>
+                    </span>
+                </div>
+                <div class="head">Port<span class="red">folio...</span></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="intro">
+            <section>
+                <p>Hello, Its Me</p>
+                <h1>Prashant Shinde</h1>
+                <h3>I'm a <span class="blue" id="devname">Frontend Developer</span></h3>
+                <span class="contacts">
+                    <img src="./logos/facebooklogo.png" alt="facebook"
+                        onclick=" window.location.href = 'https://www.facebook.com/ramesh.waghmare.96930013'">
+                    <img src="./logos/linkedinlogo.png" alt="Linked in"
+                        onclick=" window.location.href = 'https://www.linkedin.com/in/prashant-shinde-289933261'">
+                    <img src="./logos/instagramlogo.png" alt="Instagram"
+                        onclick=" window.location.href = 'https://www.instagram.com/prashant_shinde125'">
+                    <img src="./logos/whatsapplogo.png" alt="Whatsapp"
+                        onclick="window.location.href='https://wa.me/9370655646?text=Hello%20Prashant%2C%20I%20am%20interested%20to%20hire%20you%20for%20us%21'">
+                    <img src="./logos/gmaillogo.png" alt="Gmail"
+                        onclick="window.location.href='mailto:pratishant86@gmail.com'" id="gmail">
+
+                </span>
+                <div>
+                    <span class="cv"
+                        onclick="window.location.href='https://drive.google.com/file/d/1AYt87_GIsohDuQhs8kwfwK5nXrcRoQYy/view?usp=drive_link'">Download
+                        CV</span>
+                    <span class="cv" onclick="window.location.href = 'tel:+919370655646'">Call Me</span>
+                </div>
+
+            </section>
+            <figure>
+                <img src="./images/myimg.jpg" alt="My Img">
+            </figure>
+        </div>
+        <div id="about">
+            <figure>
+                <img src="./images/myimg.jpg" alt="My Img">
+            </figure>
+            <section>
+
+                <h1 class="headings">About <span class="blue">Me</span></h1>
+                <p>"Hi, I'm Prashant Shinde, a passionate programming enthusiast based in Pune. With a BSc degree and
+                    Pursuing my Masters Degree in MSc (Computer Science) and MBA (IT), I'm on a mission to become a
+                    full-stack web developer. Proficient in HTML, CSS, JavaScript, Java, and Python. My journey has just
+                    begun, and I'm excited to code for a
+                    brighter future!"</p>
+            </section>
+
+        </div>
+        <div id="project" class="title"><span class="centerfloat">
+                <h1 class="headings">Latest <span class="blue">Projects</span></h1>
+                <p></p>
+            </span></div>
+        <div id="Projects">
+            <div class="card" onclick="alert('you are currently on the Website')">
+                <div class="imgcontainer"><img src="./images/portfolio.jpg" alt="Portfolio Img">
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">PortFolio Website</h2>
+                    <p class="card-description">The Current Website You Are Scrolling...</p>
+                    <span class="btn" onclick="github(event, 'https://github.com/Prash9370/PortFolio')">View On
+                        GitHub</span>
+                </div>
+            </div>
+            <div class="card" onclick="window.open('https://samarth-power.netlify.app/','_blank')">
+                <div class="imgcontainer"><img src="./images/samarthpower.png" alt="Samarth Power Img">
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">Samarth Power WebApp</h2>
+                    <p class="card-description">Ecommerce Website <br> For Samarth Agro Machineries</p>
+                    <span class="btn" onclick="github(event, 'https://github.com/Prash9370/Samarth-Power')">View On
+                        GitHub</span>
+                </div>
+            </div>
+            <div class="card" onclick="window.open('https://blogify-j5lb.onrender.com/bloglist','_blank')">
+                <div class="imgcontainer"><img src="./images/blogify.png" alt="Blogify Img">
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">Blogify WebApp</h2>
+                    <p class="card-description">A Full Stack Blog Platform</p>
+                    <span class="btn" onclick="github(event, 'https://github.com/Prash9370/Blogify')">View On
+                        GitHub</span>
+                </div>
+            </div>
+            <div class="card" onclick="window.open('https://virtual-auction.onrender.com/','_blank')">
+                <div class="imgcontainer"><img src="./images/Auction.png" alt="Virtual Auction Img">
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">Vitual Auction Hub</h2>
+                    <p class="card-description">A Full Stack Auction Platform</p>
+                    <span class="btn" onclick="github(event, 'https://github.com/Prash9370/Virtual-auction')">View On
+                        GitHub</span>
+                </div>
+            </div>
+            <div class="card" onclick="window.open('https://openmrs.onrender.com/','_blank')">
+                <div class="imgcontainer"><img src="./images/OpenMRS.png" alt="OpenRMS Img">
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">OpenMRS Medical Record System</h2>
+                    <p class="card-description">Platform for Storing and Accessing Patients Medical History</p>
+                    <span class="btn" onclick="github(event, 'https://github.com/Prash9370/OpenMRS')">View On
+                        GitHub</span>
+                </div>
+            </div>
+            <div class="card" onclick="alert('It says Coming Soon...')">
+                <div class="imgcontainer"><img src="./images/OIP.jpg" alt="Coming Soon Img">
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">More Projects Coming Soon</h2>
+                    <p class="card-description">New Projects Are in Progress</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="miniproject" class="title"><span class="centerfloat">
+                <h1 class="headings">Mini <span class="blue">Projects</span></h1>
+                <p></p>
+            </span></div>
+        <div id="MiniProjects">
+            <div class="card" onclick="window.location.href = './minipj/captcha Validator/index.html'">
+                <div class="imgcontainer"><img src="./images/captcha.png" alt="Portfolio Img">
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">Captcha Validator</h2>
+                    <p class="card-description">Captcha to safeguard online platforms from automated bots.</p>
+                </div>
+            </div>
+            <div class="card" onclick="window.location.href = './minipj/tictactoe/index.html'">
+                <div class="imgcontainer"><img src="./images/tictactoe.png" alt="Portfolio Img">
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">Tic Tac Toe Game</h2>
+                    <p class="card-description">A web-based Tic Tac Toe game for two players with interactive gameplay
+                    </p>
+                </div>
+            </div>
+            <div class="card" onclick="window.location.href = './minipj/calculator/index.html'">
+                <div class="imgcontainer"><img src="./images/calculator.png" alt="Portfolio Img">
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">Calculator Project</h2>
+                    <p class="card-description">A Calculator Project as a Display of my Designing skills
+                    </p>
+                </div>
+            </div>
+            <div class="card" onclick="window.location.href = './minipj/todolist/index.html'">
+                <div class="imgcontainer"><img src="./images/todolist.png" alt="Portfolio Img">
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">To Do List Project</h2>
+                    <p class="card-description">A To Do List Project as a Display of my Programming skills
+                    </p>
+                </div>
+            </div>
+            <div class="card" onclick="window.location.href = './minipj/tribute/index.html'">
+                <div class="imgcontainer"><img src="./images/tribute.png" alt="Portfolio Img">
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">Tribute Page</h2>
+                    <p class="card-description">A Tribute to the Great Chhatrapati Shivaji Maharaj
+                    </p>
+                </div>
+            </div>
+            <div class="card" onclick="alert('It says Coming Soon...')">
+                <div class="imgcontainer"><img src="./images/OIP.jpg" alt="Coming Soon Img">
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">More Projects Coming Soon</h2>
+                    <p class="card-description">New Projects Are in Progress</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="title2" id="service"><span class="centerfloat">
+                <h1 class="headings">Our <span class="blue">Services</span></h1>
+            </span></div>
+
+        <div id="Services">
+            <div class="card">
+                <div class="card-content">
+                    <img src="./logos/webdevlogo.png" alt="">
+                    <h2 class="card-title">Full Stack Web Development</h2>
+                    <p class="card-description">Get Yourself Websites Developed As Per Your Imagination</p><br>
+                    <span class="btn"
+                        onclick="window.location.href='https://en.wikipedia.org/wiki/Front-end_web_development'">Read
+                        More</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <img src="./logos/androdev.png" alt="">
+                    <h2 class="card-title">Simple Android Apps Development</h2>
+                    <p class="card-description">Get Simple Android Apps Developed For Yourself</p><br>
+                    <span class="btn"
+                        onclick="window.location.href='https://en.wikipedia.org/wiki/Android_software_development'">Read
+                        More</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <img src="./logos/blender.png" alt="">
+                    <h2 class="card-title">3D Models Development</h2>
+                    <p class="card-description">Get your 3D Model Assets Developed For your Projects</p><br>
+                    <span class="btn"
+                        onclick="window.location.href='https://en.wikipedia.org/wiki/Blender_(software)'">Read
+                        More</span>
+                </div>
+            </div>
+        </div>
+        <div id="profile" class="title"><span class="centerfloat">
+                <h1 class="headings">Professional <span class="blue">Profile</span></h1>
+            </span></div>
+        <div id="resume">
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Skills</h2>
+                    <div class="card-description">
+                        <p>HTML5, CSS3, Javascript, ReactJS <br> (Front End Web Development)</p>
+                        <p>ExpressJS NodeJS <br>(Backend Development)</p>
+                        <p> MongoDB, MySQL <br> (Database Management)</p>
+                        <p class="blue">Learning in process...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Education</h2>
+                    <div class="card-description">
+                        <div class="edcontainer">
+                            <h3 class="edhead">Masters In Computer Science</h3>
+                            <p class="eddesc">Dr. DY Patil ACS College, Pune</p>
+                            <p class="eddesc">2023-Ongoing</p>
+                        </div>
+                        <div class="edcontainer">
+                            <h3 class="edhead">MBA Online (IT)</h3>
+                            <p class="eddesc">Dr. DY Patil Vidyapeeth, Pune</p>
+                            <p class="eddesc">2023-Ongoing</p>
+                        </div>
+                        <div class="edcontainer">
+                            <h3 class="edhead">Bachelors of Science</h3>
+                            <p class="eddesc">BAMU, Sambhajinagar</p>
+                            <p class="eddesc">2019-2023</p>
+                        </div>
+                        <div class="edcontainer">
+                            <h3 class="edhead">HSC 12th Science</h3>
+                            <p class="eddesc">RMIG College, Jalna</p>
+                            <p class="eddesc">2016-2018</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Certifications</h2>
+                    <div class="card-description">
+                        <div>
+                            <p><a class="cert" href="https://www.scaler.com/topics/course/python-for-beginners/"
+                                    target="_blank" rel="noopener noreferrer">Python Course for Beginners With
+                                    Certification: Mastering the Essentials</a></p>
+                            <span class="btn cbtn"
+                                onclick="window.location.href='https://drive.google.com/file/d/16-iBVqU17Ncf51aYmXmI3wzn_Jm_cDCj/view?usp=drivesdk'">View
+                                Certificate</span>
+                        </div>
+                        <div>
+                            <p class="blue">Learning in process...</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contacts">
+            <h1 class="headings">Contact <span class="blue">Me</span></h1>
+            <form>
+                <div class="contactdata">
+                    <input type="text" name="name" placeholder="Enter Your Name" class="inp">
+                    <input type="text" name="num" placeholder="Enter Your Contact Number" class="inp">
+                    <input type="text" name="email" placeholder="Enter Your Email" class="inp">
+                    <input type="text" name="rsn" placeholder="Reason For Contacting" class="inp">
+                </div>
+                <div>
+                    <textarea cols="100" rows="10" placeholder="Describe reason of contact"></textarea>
+                </div>
+                <span class="btn" onclick="sendmsg()">Send Message</span>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <hr>
+        <hr>
+        <div class="container">
+            <div class="footer-content">
+                <div class="links-heading"> Links </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#profile">Portfolio</a></li>
+                        <li><a href="#contacts">Contact</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#intro">Home</a></li>
+                        <li><a href="#project">Projects</a></li>
+                        <li><a href="#service">Services</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-info">
+                <p>©2024 Prashant Shinde</p>
+                <p>Email:-<a href="mailto:pratishant86@gmail.com">pratishant86@gmail.com</a> </p>
+                <p>Phone: +91937-065-5646</p>
+            </div>
+        </div>
+        <div class="contact-links">
+            <img src="./logos/facebooklogo.png" alt="facebook"
+                onclick=" window.location.href = 'https://www.facebook.com/ramesh.waghmare.96930013'">
+            <img src="./logos/linkedinlogo.png" alt="Linked in"
+                onclick=" window.location.href = 'https://www.linkedin.com/in/prashant-shinde-289933261'">
+            <img src="./logos/instagramlogo.png" alt="Instagram"
+                onclick=" window.location.href = 'https://www.instagram.com/prashant_shinde125'">
+            <img src="./logos/whatsapplogo.png" alt="Whatsapp"
+                onclick="window.location.href='https://wa.me/9370655646?text=Hello%20Prashant%2C%20I%20am%20interested%20to%20hire%20you%20for%20us%21'">
+            <img src="./logos/gmaillogo.png" alt="Gmail" onclick="window.location.href='mailto:pratishant86@gmail.com'"
+                id="gmail">
+        </div>
+    </footer>
+    <script>
+        function sendmsg() {
+            let classs = document.getElementsByClassName("inp");
+            let msgdt = "Name :- " + classs[0].value + "\nContact :- " + classs[1].value + "\nEmail :- " + classs[2].value + "\nReason :- " + classs[3].value + "\nDescription:- " + document.getElementsByTagName("textarea")[0].value;
+            console.log(msgdt);
+            let phoneNumber = "+919370655646";
+            let encodedMessage = encodeURIComponent(msgdt);
+            let whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+            window.location.href = whatsappURL;
+
+        }
+        function github(event, url) {
+            event.stopPropagation();
+            window.open(url);
+        }
+
+    </script>
+
+
+</body>
+
+</html>

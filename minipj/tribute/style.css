@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #f9f4eb;
+      margin: 0;
+      padding: 0;
+      min-width: 330px;
+    }
+
+    header {
+        background: linear-gradient(to right, #eee45a, #ed892c);
+        text-shadow: 0.3vw 0.3vw 0.3vw white;
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      text-align: center;
+      padding: 1em 0;
+      font-size: min(3vw,30px);
+      font-family: 'Cinzel', serif;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
+    }
+    .imgs{
+        text-align: center;
+    }
+    img {
+      max-width: 100%;
+      height: min(20vw,195px);
+      border-radius: 15px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+
+    h1, h2 {
+      color: #c52108;
+    }
+
+    h2 {
+      border-bottom: 2px solid #4b3621;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    .quote {
+      font-style: italic;
+      color: #6a4c2b;
+      margin-top: 20px;
+    }
+
+    .signature {
+      text-align: right;
+      font-style: italic;
+      color: #6a4c2b;
+      margin-top: 20px;
+    }
